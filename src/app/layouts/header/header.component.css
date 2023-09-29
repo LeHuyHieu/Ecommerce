@@ -1,0 +1,28 @@
+.menu-bar {
+    position: relative;
+    cursor: pointer;
+}
+
+.bar-child {
+    position: absolute;
+    width: 150px;
+    background-color: #eee;
+    padding: 12px 10px;
+    border-radius: 5px;
+    margin: 0;
+    z-index: 9;
+    right: 0;
+    top: 100%;
+}
+.bar-child li {
+    display: inline-block;
+    width: 100%;
+}
+.bar-child li a {
+    display: inline-block;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    padding: 7px 10px;
+}

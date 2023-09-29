@@ -1,0 +1,232 @@
+.cart {
+    background-color: #eee;
+}
+
+.heading {
+    background-color: #eee;
+    margin-bottom: 0;
+    color: #ff4000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cart .form-delete {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.cart .form-delete .form-group~button[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cart .form-delete .form-group #delete-all,
+.cart .form-delete .form-group label {
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cart .form-content h6 {
+    text-decoration: none;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.cart .form-content h6 a {
+    color: #000;
+}
+
+.cart .form-content h6 a:hover {
+    color: #ff4000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cart .form-content {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.cart .product .left {
+    width: 100%;
+}
+
+.cart .product .left .img-product {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.cart .address .add-product a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+.cart .address .add-product input[type="number"] {
+    border: 1px solid #eee;
+    outline: none;
+    padding: 5px;
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.cart .address .price-product h4 {
+    margin-top: 14px;
+    color: #ff4000;
+    font-size: 25px;
+}
+
+.cart .address {
+    border-radius: 6px;
+}
+
+.cart .address .address-user {
+    padding: 15px 20px 25px 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 14px;
+}
+
+.cart .address .address-user>span {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.cart .address .address-user input#address {
+    border: 1px solid #eee;
+    outline: none;
+    display: inline-block;
+    padding: 5px 10px;
+    height: 45px;
+    width: calc(100% - 55px);
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.cart .address .address-user label {
+    width: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    height: 45px;
+}
+
+.cart .address .detail-product-order h5 {
+    font-weight: normal;
+    letter-spacing: .6px;
+}
+
+.cart .address .detail-product-order .price-product {
+    color: #767676;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cart .address .detail-product-order .price-product span {
+    color: #ff4000;
+    font-weight: 500;
+}
+
+.cart .address .detail-product-order .form-group input {
+    width: calc(100% - 40%);
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    outline: none;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 6px 0 0 6px;
+    margin-bottom: 30px;
+}
+
+.cart .address .detail-product-order .form-group label {
+    width: calc(40%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff4000;
+    color: #fff;
+    font-weight: 600;
+    height: 45px;
+    border: 1px solid #eee;
+    border-radius: 0 6px 6px 0;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.cart .address .detail-product-order .price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart .address .detail-product-order .buy {
+    width: 100%;
+    background-color: #ff4000;
+    color: #ff4000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.cart .address .seller .free-shhip,
+.cart .address .seller .voncher {
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart .address .seller .free-shhip {
+    background-color: rgb(95, 235, 248);
+}
+
+.cart .address .seller .voncher {
+    background-color: #fa5865;
+}
+
+.comment {
+    background-color: #fff;
+    padding: 16px 20px;
+}
+.comment h3.heading {
+    color: #656565;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+}
+.comment .comment-star {
+    padding: 20px;
+    background-color: #f2babe5f;
+}

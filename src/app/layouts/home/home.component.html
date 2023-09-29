@@ -1,0 +1,452 @@
+<app-header></app-header>
+<section class="banner">
+  <owl-carousel-o [options]="bannerSlider">
+    <ng-template carouselSlide>
+      <div class="banner-container">
+        <div class="banner-content">
+          <span>Apple Watch</span>
+          <h2>Apple Watch 12pro</h2>
+          <a [routerLink]="['/detail']" class="btn btn-now">Buy Now</a>
+        </div>
+        <div class="banner-image">
+          <img class="w-75 mx-auto ms-md-0" src="../assets/images/banner1.webp" alt="">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="banner-container">
+        <div class="banner-content">
+          <span>Apple Watch</span>
+          <h2>Apple Watch 12pro</h2>
+          <a [routerLink]="['/detail']" class="btn btn-now">Buy Now</a>
+        </div>
+        <div class="banner-image">
+          <img class="w-75 mx-auto ms-md-0" src="../assets/images/banner3.webp" alt="">
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</section>
+
+<section class="best-selling">
+  <div class="container">
+    <div class="best-selling-container pr-md-4 pr-0">
+      <div class="sale-price">
+        Sale <strong>14%</strong>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-3 col-12 selling-col-1">
+        <div class="selling-left">
+          <ul>
+            <li>
+              <span class="cont-date">{{days}}</span>
+              <span class="cont-day">Days</span>
+            </li>
+            <li>
+              <span class="cont-date">{{hours}}</span>
+              <span class="cont-day">Hours</span>
+            </li>
+            <li>
+              <span class="cont-date">{{mins}}</span>
+              <span class="cont-day">Mins</span>
+            </li>
+            <li>
+              <span class="cont-date">{{serc}}</span>
+              <span class="cont-day">Secs</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-8 col-sm-9 col-12 selling-col-2">
+        <div class="selling-img">
+          <img src="../assets/images/product11.jpg" class="w-100" alt="">
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-md-12 col-12 p-lg-0 p-4 selling-col-3">
+        <div class="selling-heading">
+          <a href="javascript:void(0)">Enim Pichana Eni</a>
+          <div class="selling-rating">
+            <i class="fa far fa-star"></i>
+            <i class="fa far fa-star"></i>
+            <i class="fa far fa-star"></i>
+            <i class="fa far fa-star"></i>
+            <i class="fa far fa-star"></i>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            earum maiores accusamus, voluptatibus tenetur aliquam facere
+            fugiat ullam ab sapiente debitis quis dolore, quod blanditiis.
+            Magnam culpa obcaecati nobis delectus?
+          </p>
+          <h3>
+            <span class="selling-amount">$230.00</span>
+            <span class="selling-discount">$202</span>
+          </h3>
+          <div class="selling-button">
+            <a [routerLink]="['/cart']" class="btn-cart mb-sm-0 mb-3"><i class="fa fa-shopping-cart"></i> Add To
+              Cart</a>
+            <button class="main-button mb-sm-0 mb-3">
+              <a href="javascript:void(0)"><i class="fa fa-heart"></i></a>
+              <a href="javascript:void(0)"><i class="fa fa-search"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="container">
+    <owl-carousel-o [options]="testimoniaSlider">
+      <ng-template carouselSlide>
+        <div class="testimonial-container flex-lg-row flex-column-reverse">
+          <div class="testimonial-content w-60">
+            <span>Apple Watch</span>
+            <h2>Apple Watch 12pro</h2>
+            <a [routerLink]="['/detail']" class="btn btn-now">Buy Now</a>
+          </div>
+          <div class="testimonial-image">
+            <owl-carousel-o [options]="testimoniaSliderChild">
+              <ng-template carouselSlide>
+                <img src="../assets/images/product7.jpg" class="w-100" alt="">
+              </ng-template>
+              <ng-template carouselSlide>
+                <img src="../assets/images/product8.jpg" class="w-100" alt="">
+              </ng-template>
+              <ng-template carouselSlide>
+                <img src="../assets/images/product9.jpg" class="w-100" alt="">
+              </ng-template>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="testimonial-container flex-lg-row flex-column-reverse">
+          <div class="testimonial-content w-60">
+            <span>Apple Watch</span>
+            <h2>Apple Watch 12pro</h2>
+            <a [routerLink]="['/detail']" class="btn btn-now">Buy Now</a>
+          </div>
+          <div class="testimonial-image">
+            <owl-carousel-o [options]="testimoniaSliderChild">
+              <ng-template carouselSlide>
+                <img src="../assets/images/product7.jpg" class="w-100" alt="">
+              </ng-template>
+              <ng-template carouselSlide>
+                <img src="../assets/images/product8.jpg" class="w-100" alt="">
+              </ng-template>
+              <ng-template carouselSlide>
+                <img src="../assets/images/product9.jpg" class="w-100" alt="">
+              </ng-template>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="testimonial-container flex-lg-row flex-column-reverse">
+          <div class="testimonial-content w-60">
+            <span>Apple Watch</span>
+            <h2>Apple Watch 12pro</h2>
+            <a [routerLink]="['/detail']" class="btn btn-now">Buy Now</a>
+          </div>
+          <div class="testimonial-image">
+            <owl-carousel-o [options]="testimoniaSliderChild">
+              <ng-template carouselSlide>
+                <img src="../assets/images/product7.jpg" class="w-100" alt="">
+              </ng-template>
+              <ng-template carouselSlide>
+                <img src="../assets/images/product8.jpg" class="w-100" alt="">
+              </ng-template>
+              <ng-template carouselSlide>
+                <img src="../assets/images/product9.jpg" class="w-100" alt="">
+              </ng-template>
+            </owl-carousel-o>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+
+<section class="bg-color">
+  <div class="container">
+    <div class="title">
+      <p>The Best Seller Of Hitheme</p>
+      <h1><span>Best</span> Seller</h1>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+        <div class="card">
+          <div class="card-main">
+            <div class="discount">9%</div>
+            <div class="label label-green">Pre Order</div>
+            <div class="product-container">
+              <div class="p" (mouseover)="changeImageService.changeImage('product1', '../assets/images/product1.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product1.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product1', '../assets/images/product2.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product2.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product1', '../assets/images/product3.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product3.jpg" alt="Product">
+              </div>
+            </div>
+            <div class="image">
+              <img class="w-100 h-100" [src]="getImageUrl('product1')" alt="Image">
+            </div>
+            <div class="cart-line"></div>
+            <div class="cart-item">
+              <ul>
+                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                <li><a href=""><i class="fa fa-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">Incidid Tongue Bar</a>
+            <div class="rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+        <div class="card">
+          <div class="card-main">
+            <div class="discount">9%</div>
+            <div class="label label-green">Pre Order</div>
+            <div class="product-container">
+              <div class="p" (mouseover)="changeImageService.changeImage('product2', '../assets/images/product4.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product4.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product2', '../assets/images/product5.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product5.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product2', '../assets/images/product6.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product6.jpg" alt="Product">
+              </div>
+            </div>
+            <div class="image">
+              <img class="w-100 h-100" [src]="getImageUrl('product2')" alt="Image">
+            </div>
+            <div class="cart-line"></div>
+            <div class="cart-item">
+              <ul>
+                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                <li><a href=""><i class="fa fa-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">Incidid Tongue Bar</a>
+            <div class="rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+        <div class="card">
+          <div class="card-main">
+            <div class="discount">9%</div>
+            <div class="label label-green">Pre Order</div>
+            <div class="product-container">
+              <div class="p" (mouseover)="changeImageService.changeImage('product3', '../assets/images/product7.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product7.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product3', '../assets/images/product8.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product8.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product3', '../assets/images/product9.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product9.jpg" alt="Product">
+              </div>
+            </div>
+            <div class="image">
+              <img class="w-100 h-100" [src]="getImageUrl('product3')" alt="Image">
+            </div>
+            <div class="cart-line"></div>
+            <div class="cart-item">
+              <ul>
+                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                <li><a href=""><i class="fa fa-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">Incidid Tongue Bar</a>
+            <div class="rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+        <div class="card">
+          <div class="card-main">
+            <div class="discount">9%</div>
+            <div class="label label-green">Pre Order</div>
+            <div class="product-container">
+              <div class="p" (mouseover)="changeImageService.changeImage('product4', '../assets/images/product10.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product10.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product4', '../assets/images/product11.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product11.jpg" alt="Product">
+              </div>
+              <div class="p" (mouseover)="changeImageService.changeImage('product4', '../assets/images/product12.jpg')">
+                <img class="w-100 h-100" src="../assets/images/product12.jpg" alt="Product">
+              </div>
+            </div>
+            <div class="image">
+              <img class="w-100 h-100" [src]="getImageUrl('product4')" alt="Image">
+            </div>
+            <div class="cart-line"></div>
+            <div class="cart-item">
+              <ul>
+                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                <li><a href=""><i class="fa fa-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content">
+            <a href="">Incidid Tongue Bar</a>
+            <div class="rating">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="policy">
+  <div class="container text-center pb-md-3 pb-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="policy-card">
+          <div class="round">
+            <div class="round-icon">
+              <i class="fa fa-car"></i>
+            </div>
+          </div>
+          <h2>Free Shipping &amp; Return</h2>
+          <p>Free Shipping on all UK order</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="policy-card">
+          <div class="round">
+            <div class="round-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+          </div>
+          <h2>Money Back Guarentee</h2>
+          <p>30 days money back guarentee</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="policy-card">
+          <div class="round">
+            <div class="round-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+          </div>
+          <h2>Online Support 24/24</h2>
+          <p>We support online 24/24 on a day</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="policy-product">
+  <div class="container">
+    <div class="bg-position">
+      <owl-carousel-o [options]="policyOptions">
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>25</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img class="w-100" src="../assets/images/policy1.jpg" alt="p1">
+            </div>
+            <h2>At vero eos et accusamus et</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+              sunt in culpa qui officia deserunt mollitia animi, id est</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>26</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img class="w-100" src="../assets/images/policy2.jpg" alt="p1">
+            </div>
+            <h2>At vero eos et accusamus et</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+              sunt in culpa qui officia deserunt mollitia animi, id est</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="policy-p-card">
+            <div class="date">
+              <h3>27</h3>
+              <h4>Jun</h4>
+            </div>
+            <div class="policy-img">
+              <img class="w-100" src="../assets/images/policy3.jpg" alt="p1">
+            </div>
+            <h2>At vero eos et accusamus et</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+              atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+              sunt in culpa qui officia deserunt mollitia animi, id est</p>
+            <a href="" class="read-more">Read More <i class="fas fa-caret-right"></i></a>
+          </div>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="container">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of parentArrays">
+        <img class="w-100 filter" src="{{ item.imageName }}" alt="Partner">
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,72 @@
+.h-100vh{
+    height: 100vh;
+}
+.bg-login {
+    background: url(../../assets/images/bg-login.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sign-up {
+    border: 1px solid #d1c6c6;
+    padding: 40px 20px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    color: #fff;
+}
+.btn-top {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.sign-up h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.form-control {
+    background-color: transparent;
+    color: #fff;
+}
+.form-control::placeholder {
+    color: #fff;
+}
+.sign-up .form-group {
+    margin-bottom: 1rem;
+}
+.sign-up .remember, .sign-up #remember {
+    cursor: pointer;
+}
+.sign-up .remember ~ a {
+    text-decoration: none;
+    color: #fff;
+}
+.sign-up .remember ~ a:hover {
+    text-decoration: underline;
+    color: #ff4000;
+}
+.btn-sign-up {
+    border: none;
+    box-shadow: 1px 2px 5px #eee;
+    outline: none;
+    background-color: #ff4000;
+    padding: 12px 30px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    transition: all .2s ease;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.btn-sign-up:hover {
+    transform: translateY(-3px);
+    background-color: #fff;
+    color: #ff4000;
+}

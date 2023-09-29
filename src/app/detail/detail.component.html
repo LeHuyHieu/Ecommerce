@@ -1,0 +1,488 @@
+<app-header></app-header>
+
+<div class="cart py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <div action="" method="post" class="cart-form">
+                    <div class="form-content">
+                        <h6><a href="" class="name-shop">Shop Ben Tre TPHCM</a></h6>
+                        <div class="product d-flex justify-content-between border-top py-3">
+                            <div class="left flex-direction">
+                                <div class="img-product">
+                                    <owl-carousel-o [options]="customOptions">
+                                        <ng-template carouselSlide *ngFor="let item of parentArrays">
+                                          <img class="w-100 filter" src="{{ item.imageName }}" alt="Product">
+                                        </ng-template>
+                                    </owl-carousel-o>
+                                </div>
+                                <div class="product-detail">
+                                    <h5><a href="" class="title-product">Apple Watch 12pro</a></h5>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid nostrum
+                                        molestiae nam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="bg-white address px-2">
+                    <form action="" method="post" class="form-address">
+                        <div class="address-user border-bottom">
+                            <span>Address</span>
+                            <div class="form-group d-flex align-items-center">
+                                <label for="address"><i class="fas fa-map-marked-alt"></i></label>
+                                <input type="text" id="address" name="address" placeholder="Enter your address here">
+                            </div>
+                        </div>
+                        <div class="detail-product-order pb-4">
+                            <h5>Apple Watch</h5>
+                            <div class="d-flex seller">
+                                <span class="free-shhip">Free ship</span>
+                                <span class="voncher">-120.000</span>
+                                <span class="voncher">-50.000</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="add-product w-50">
+                                    <a href="javascript:void(0)"><i class="fas fa-window-minimize"></i></a>
+                                    <input type="number" min="1" step="1" value="1">
+                                    <a href="javascript:void(0)"><i class="fas fa-plus"></i></a>
+                                </div>
+                                <div class="price-product w-50">
+                                    <h4>$91.00</h4>
+                                </div>
+                            </div>
+                            <span class="price-product">Temporary product calculation(0 Product) <span>$91.00</span></span>
+                            <span class="price-product">Transport fee <span>$91.00</span></span>
+                            <h6 class="price-product">
+                                <span>Total: </span>
+                                <span class="price">$91.00</span>
+                            </h6>
+                            <div class="d-flex">
+                                <button class="btn buy me-3"><i class="fas fa-shopping-basket"></i> Add Basket</button>
+                                <button class="btn buy ms-3">Buy Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comment">
+            <h3 class="heading text-start bg-white">Product reviews</h3>
+            <form action="" method="post" class="comment-star">
+                <div class="count-star">
+                    <h4>4.9</h4>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="formm-select-star">
+                    <label for="star-5">
+                        <input type="radio" name="radio-star" id="star-5">
+                        Star 5
+                    </label>
+                    <label for="star-4">
+                        <input type="radio" name="radio-star" id="star-4">
+                        Star 4
+                    </label>
+                    <label for="star-3">
+                        <input type="radio" name="radio-star" id="star-3">
+                        Star 3
+                    </label>
+                    <label for="star-2">
+                        <input type="radio" name="radio-star" id="star-2">
+                        Star 2
+                    </label>
+                    <label for="star-1">
+                        <input type="radio" name="radio-star" id="star-1">
+                        Star 1
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<section class="bg-color">
+    <div class="container">
+        <div class="title">
+            <p>The Best Seller Of Hitheme</p>
+            <h1><span>Best</span> Seller</h1>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product1', '../assets/images/product1.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product1.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product1', '../assets/images/product2.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product2.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product1', '../assets/images/product3.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product3.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product1')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product2', '../assets/images/product4.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product4.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product2', '../assets/images/product5.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product5.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product2', '../assets/images/product6.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product6.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product2')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product3', '../assets/images/product7.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product7.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product3', '../assets/images/product8.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product8.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product3', '../assets/images/product9.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product9.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product3')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product4', '../assets/images/product10.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product10.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product4', '../assets/images/product11.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product11.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product4', '../assets/images/product12.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product12.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product4')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product1', '../assets/images/product1.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product1.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product1', '../assets/images/product2.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product2.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product1', '../assets/images/product3.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product3.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product1')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product2', '../assets/images/product4.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product4.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product2', '../assets/images/product5.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product5.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product2', '../assets/images/product6.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product6.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product2')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product3', '../assets/images/product7.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product7.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product3', '../assets/images/product8.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product8.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product3', '../assets/images/product9.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product9.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product3')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-xl-0  mb-4">
+                <div class="card">
+                    <div class="card-main">
+                        <div class="discount">9%</div>
+                        <div class="label label-green">Pre Order</div>
+                        <div class="product-container">
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product4', '../assets/images/product10.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product10.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product4', '../assets/images/product11.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product11.jpg" alt="Product">
+                            </div>
+                            <div class="p"
+                                (mouseover)="changeImageService.changeImage('product4', '../assets/images/product12.jpg')">
+                                <img class="w-100 h-100" src="../assets/images/product12.jpg" alt="Product">
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img class="w-100 h-100" [src]="getImageUrl('product4')" alt="Image">
+                        </div>
+                        <div class="cart-line"></div>
+                        <div class="cart-item">
+                            <ul>
+                                <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-basket"></i></a></li>
+                                <li><a href=""><i class="fa fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <a href="">Incidid Tongue Bar</a>
+                        <div class="rating">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p><span class="money">$91.00</span> <span class="old-price">$80.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<app-footer></app-footer>

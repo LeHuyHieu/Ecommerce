@@ -1,0 +1,70 @@
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-md-0 mb-3 col-12">
+          <div class="language">
+            <ul>
+              <li (click)="drop('languageEN');">
+                English <i class="fa fa-caret-down"></i>
+                <div class="dropdown" *ngIf="id === 'languageEN'">
+                  <ul>
+                    <li>English</li>
+                    <li>Vietnamese</li>
+                  </ul>
+                </div>
+              </li>
+              <li (click)="drop('languageVN');">
+                Vietnamese <i class="fa fa-caret-down"></i>
+                <div class="dropdown" *ngIf="id === 'languageVN'">
+                  <ul>
+                    <li>English</li>
+                    <li>Vietnamese</li>
+                    <li>EUR</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-12 text-right">
+          <div class="social-menu">
+            <ul>
+              <li class="menu-bar" (click)="down(true);">
+                <a href="javascript:void(0)">
+                  <i class="fas fa-bars"></i>
+                </a>
+                <ul class="bar-child" *ngIf="navbar">
+                  <li><a [routerLink]="['/home']"><i class="fas fa-home"></i>Home</a></li>
+                  <li><a [routerLink]="['/cart']"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                  <li><a [routerLink]="['/profile']"><i class="fas fa-user"></i> Profile</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li>
+                <a class="btn-sign" [routerLink]="['/sign-up']"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
